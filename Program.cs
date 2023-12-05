@@ -68,7 +68,7 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo  // Microsoft.OpenApi.Models
     {
         Version = "v1",
-        Title = "CNWeb_HotelManagement" +
+        Title = "DotNet_Nhom4" +
         "",
         Description = "Quản lý đặt phòng khách sạn WebApi",
         TermsOfService = new Uri("https://example.com/terms"),
