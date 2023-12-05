@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ReservationService {
-  private api ="https://localhost:7232/api/Reservation/NewReserveRooms"
+  private api ="https://qlkhachsanapi.azurewebsites.net/api/Reservation/NewReserveRooms"
   
   constructor(private http:HttpClient) { }
   DatPhong(data: any):any{

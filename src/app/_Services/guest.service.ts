@@ -16,11 +16,11 @@ export class GuestService {
   constructor(private http:HttpClient) { }
 
   getAllGuest(){
-    const api ="https://localhost:7232/api/Guest"
+    const api ="https://qlkhachsanapi.azurewebsites.net/api/Guest"
     return this.http.get<any>(api);
   }
   getGuestById(id:string){
-    const api =`https://localhost:7232/api/Guest/${id}`;
+    const api =`https://qlkhachsanapi.azurewebsites.net/api/Guest/${id}`;
     return this.http.get<any>(api);
   }
 }

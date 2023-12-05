@@ -9,12 +9,12 @@ export class ReportService {
   constructor(private http:HttpClient) { }
 
   getAllReport(){
-    const api ="https://localhost:7232/api/Report"
+    const api ="https://qlkhachsanapi.azurewebsites.net/api/Report"
     return this.http.get<any>(api);
   }
 
   addReport(data:any){
-    const api ="https://localhost:7232/api/Report"
+    const api ="https://qlkhachsanapi.azurewebsites.net/api/Report"
     return this.http.post<any>(api,data);
   }
 

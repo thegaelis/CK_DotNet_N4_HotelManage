@@ -7,7 +7,7 @@ import { RoomType } from '../Models/RoomType';
   providedIn: 'root'
 })
 export class RoomTypeService {
-  api = "https://localhost:7232/api/RoomType"
+  api = "https://qlkhachsanapi.azurewebsites.net/api/RoomType"
   constructor(private http:HttpClient) { }
   public getRoomType():Observable<RoomType[]>{
     return this.http.get<RoomType[]>(this.api)
